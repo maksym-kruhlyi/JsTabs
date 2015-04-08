@@ -1,0 +1,303 @@
+/* normalize */
+
+/* prevent iOS text size adjust after orientation change */
+html
+{
+    font-family: sans-serif;
+
+        -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* reset default margin */
+body
+{
+    font-size: 14px;
+
+    margin: 0;
+}
+
+/* remove links gray background in IE 10 */
+a
+{
+    background-color: transparent;
+}
+
+a:active,
+a:hover
+{
+    outline: 0;
+}
+
+/* remove border in IE 8/9/10 */
+img
+{
+    border: 0;
+}
+
+/* clearfix */
+.clearfix:before,
+.clearfix:after
+{
+    display: table;
+
+    border-collapse: collapse;
+
+    content: '';
+}
+.clearfix:after
+{
+    clear: both;
+}
+.clearfix
+{
+    min-height: 0;
+}
+
+
+/* general style */
+.wrapper
+{
+    width: 90%;
+    margin: 0 5%;
+    padding: 50px 0;
+}
+
+/* Luxoft module style */
+.tabs-module
+{
+    font-size: 14px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    width: 500px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.tabs-module .tabs-controls,
+.tabs-module .tabs-items
+{
+    margin: 0;
+    padding: 0;
+}
+
+.tabs-module .tabs-controls
+{
+    padding: 0 15px;
+}
+
+.tabs-module .tabs-controls-item
+{
+    float: left;
+
+    margin: 0 10px -1px;
+
+    list-style: none;
+
+    background-color: white;
+}
+
+.tabs-module .tabs-controls-link
+{
+    line-height: 24px;
+
+    float: left;
+
+    padding: 5px 15px;
+
+    text-decoration: none;
+
+    background-color: #d0d0d0;
+
+    color: black;
+    border: 1px solid #aaa;
+    border-bottom: 1px solid #d0d0d0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.tabs-module .tabs-controls-link:visited,
+.tabs-module .tabs-controls-link:hover
+{
+    color: inherit;
+}
+
+.tabs-module .tabs-controls-link.active
+{
+    font-size: 18px;
+
+    background-color: #e3e3e3;
+
+    position: relative;
+    bottom: -35px;
+
+    border-bottom: 1px solid #aaa;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.tabs-module .tabs-controls-deletelink
+{
+    font-size: 38px;
+    *font-size: 24px;
+
+    display: inline-block;
+
+    margin-left: 5px;
+
+    vertical-align: bottom;
+    *vertical-align: middle;
+
+    color: #d29393;
+}
+
+.tabs-module .tabs-controls-link.active .tabs-controls-deletelink
+{
+    display: none;
+}
+
+.tabs-controls-deletelink:hover
+{
+    color: black;
+}
+
+.tabs-module .tabs-items
+{
+    height: 178px;
+    padding: 42px 20px;
+
+    background-color: #d0d0d0;
+
+    border: 1px solid #aaa;
+    border-radius: 10px;
+
+    line-height: 16px;
+}
+
+.tabs-module .tabs-items li
+{
+    overflow: auto;
+
+    height: 100%;
+
+    list-style: none;
+}
+
+.tabs-module .tabs-items li img
+{
+    width: 100%;
+    max-width: 100%;
+}
+
+.tabs-module .tabs-items li.show
+{
+    display: block;
+}
+
+.tabs-module .tab-navbar
+{
+    line-height: 24px;
+
+    display: none;
+
+    margin: 0 0 5px;
+    padding: 4px 20px;
+
+    background-color: #d0d0d0;
+
+    border: 1px solid #aaa;
+}
+
+.tabs-module .tab-active-name
+{
+    padding-left: 10px;
+}
+
+.tabs-module .tab-navbar-toggle
+{
+    float: right;
+
+    height: 24px;
+    padding: 3px;
+
+    border: 1px solid #aaa;
+    background: none;
+}
+
+.tabs-module .icon-bar
+{
+    display: block;
+
+    width: 22px;
+    height: 2px;
+    margin-top: 3px;
+
+    border-radius: 1px;
+    background-color: #aaa;
+}
+
+/* mobile style */
+.mobile .tabs-module .tabs-controls
+{
+    position: absolute;
+    top: 30px;
+    right: 0;
+
+    width: 200px;
+}
+
+.mobile .tabs-module .tabs-controls-item
+{
+    clear: both;
+
+    width: 100%;
+    margin-bottom: 0;
+
+    background-color: transparent;
+}
+
+.mobile .tabs-module .tabs-controls-link
+{
+    box-sizing: border-box;
+    width: 100%;
+
+    border: none;
+    border-top: 2px solid #aaa;
+    border-radius: 0;
+    background-color: #c1c1c1;
+}
+
+.mobile .tabs-module .tabs-controls-deletelink
+{
+    float: right;
+}
+
+.mobile .tabs-module .tabs-controls-link.active
+{
+    font-size: inherit;
+
+    bottom: 0;
+
+    border-bottom: none;
+    border-radius: 0;
+
+    background-color: #E3E3E3;
+}
+
+.mobile .tabs-module .tabs-controls-item:first-child .tabs-controls-link
+{
+    border-top: none;
+}
+
+.mobile .tabs-module
+{
+    min-width: 260px;
+    max-width: 100%;
+}
+
+.mobile .tabs-module .tabs-items {
+	padding: 40px 20px;
+}
